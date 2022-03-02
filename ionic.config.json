@@ -1,0 +1,7 @@
+{
+  "name": "petco-company",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
