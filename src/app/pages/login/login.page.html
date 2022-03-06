@@ -1,0 +1,17 @@
+<app-header titulo="Iniciar Sesión"></app-header>
+
+<ion-content>
+    <ion-img src="/assets/Login.png"></ion-img>
+
+    <ion-item>
+        <ion-label position="stacked">Corre electronico:</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item class="margen">
+        <ion-label  position="stacked">Contraseña:</ion-label>
+        <ion-input  [type]="passwordTypeInput"></ion-input>
+    </ion-item>
+
+    <ion-button routerLink='/home-user' color="primary" expand="block" class="margen2">Iniciar sesión</ion-button>
+</ion-content>

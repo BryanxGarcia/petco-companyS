@@ -1,0 +1,22 @@
+<app-header titulo="Registrate"></app-header>
+
+
+<ion-content>
+    <ion-img src ="/assets/registro.png"></ion-img>
+    <ion-item>
+        <ion-label position="stacked">Nombre completo:</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="stacked">Corre electronico:</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item class="margen">
+        <ion-label  position="stacked">Contraseña:</ion-label>
+        <ion-input  [type]="passwordTypeInput"></ion-input>
+    </ion-item>
+
+    <ion-button routerLink='/home' color="primary" expand="block" class="margen2">Registrarme</ion-button>
+
+</ion-content>

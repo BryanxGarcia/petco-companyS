@@ -1,0 +1,55 @@
+<app-header titulo="Descripcion"></app-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <img src="../../../assets/Camaleon.jpg" width="500px" alt="">
+    </ion-card-header>
+
+
+    <ion-card-title>CAMALEÓN</ion-card-title> <br>
+    <ion-card-subtitle>10-60 cm / 5-10 kg</ion-card-subtitle> <br>
+    <ion-segment value="all" color="tertiary" scrollable="true" mode="ios" [(ngModel)]="segmentModel"
+      (ionChange)="segmentChanged($event)">
+
+      <ion-segment-button value="all" id="segmento">
+        <ion-label>Descripción</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="favorites" id="segmento">
+        <ion-label>Alimentación</ion-label>
+      </ion-segment-button>
+
+
+    </ion-segment>
+
+
+    <ion-card *ngIf="segmentModel === 'all'">
+
+      <ion-card-content>
+        Son en su mayoría de color verde, aunque
+        muestran una gran variedad de tonos, desde
+        verdes amarillentos a verdes oliva. Unas pocas
+        especies tienen coloraciones marrones, y una
+        especie. puede ser azul. Una de sus
+        características más remarcables es que en
+        alrededor de un cuarto de las especies sus
+        órganos internos son visibles
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngIf="segmentModel === 'favorites'">
+      <ion-card-content>
+        <p>¿Qué come un camaleón?</p>
+        <p>Grillos.</p>
+        <p>Moscas del vinagre.</p>
+        <p> Cucarachas.</p>
+          <p> Gusanos.</p>
+            <p> Mantis.</p>
+              <p>Langostas.</p>
+
+      </ion-card-content>
+    </ion-card>
+
+  </ion-card>
+
+</ion-content>

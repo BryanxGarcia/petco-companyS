@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons >
+      <ion-back-button mode="md" color="secondary" defaultHref="/">
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-searchbar color="secondary" animated></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div cards>
+  <div class="grid-full">
+    <ion-row>
+      <ion-col>
+        <ion-card  href="/description">
+          <img src="../../../assets/gato-persa.jpg">
+          <h1 orange>Gato persa</h1>
+          <ion-button  (click)="onClick()" color="danger">
+            <ion-icon slot="icon-only" 
+            name="heart" [name]="favorito?'heart':'heart-outline'">
+          </ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card  href="/description">
+          <img src="../../../assets/huron.jpg">
+          <h1 grey>Huron</h1>
+          <ion-button  (click)="onClick()" color="danger">
+            <ion-icon slot="icon-only" 
+            name="heart" [name]="favorito?'heart':'heart-outline'">
+          </ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card  href="/description">
+          <img src="../../../assets/rana-cristal.jpg">
+          <h1 green>Rana cristal</h1>
+          <ion-button  (click)="onClick()" color="danger">
+            <ion-icon slot="icon-only" 
+            name="heart" [name]="favorito?'heart':'heart-outline'">
+          </ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card  href="/description">
+          <img src="../../../assets/pug.jpg">
+          <h1 green>Perro pug</h1>
+          <ion-button  (click)="onClick()" color="danger">
+            <ion-icon slot="icon-only" 
+            name="heart" [name]="favorito?'heart':'heart-outline'">
+          </ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</div>
+
+
+</ion-content>
+ 
