@@ -7,11 +7,14 @@
         <ion-label position="stacked">Corre electronico:</ion-label>
         <ion-input></ion-input>
     </ion-item>
-    
+
     <ion-item class="margen">
-        <ion-label  position="stacked">Contraseña:</ion-label>
-        <ion-input  [type]="passwordTypeInput"></ion-input>
+        <ion-label position="stacked">Contraseña:</ion-label>
+        <ion-input [type]="passwordTypeInput"></ion-input>
     </ion-item>
 
     <ion-button routerLink='/home-user' color="primary" expand="block" class="margen2">Iniciar sesión</ion-button>
+    <div class="texto">
+        <a>¿No tienes una cuenta?<a routerLink="/sign-in">Registrate</a></a>
+    </div>
 </ion-content>

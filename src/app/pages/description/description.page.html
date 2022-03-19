@@ -1,26 +1,27 @@
 <app-header titulo="Descripcion"></app-header>
 <ion-content>
-  <ion-card>
+  <ion-card class="card">
     <ion-card-header>
-      <img src="../../../assets/Camaleon.jpg" width="500px" alt="">
+      <img src="../../../assets/Camaleon.jpg" alt="ion">
     </ion-card-header>
 
+<div style="padding: 3%;">
+    <ion-card-title>Camaleón</ion-card-title> <br>
+    <ion-card-subtitle color="primary">10-60 cm / 5-10 kg</ion-card-subtitle> <br>
 
-    <ion-card-title>CAMALEÓN</ion-card-title> <br>
-    <ion-card-subtitle>10-60 cm / 5-10 kg</ion-card-subtitle> <br>
-    <ion-segment value="all" color="tertiary" scrollable="true" mode="ios" [(ngModel)]="segmentModel"
+    <ion-segment value="all" color="primary" scrollable="true" mode="ios" [(ngModel)]="segmentModel"
       (ionChange)="segmentChanged($event)">
 
-      <ion-segment-button value="all" id="segmento">
-        <ion-label>Descripción</ion-label>
+      <ion-segment-button  color="primary" value="all" id="segmento">
+        <ion-label color="primary" >Descripción</ion-label>
       </ion-segment-button>
 
       <ion-segment-button value="favorites" id="segmento">
-        <ion-label>Alimentación</ion-label>
+        <ion-label color="primary" >Alimentación</ion-label>
       </ion-segment-button>
 
 
-    </ion-segment>
+</ion-segment>
 
 
     <ion-card *ngIf="segmentModel === 'all'">
@@ -49,7 +50,7 @@
 
       </ion-card-content>
     </ion-card>
-
+  </div>
   </ion-card>
 
 </ion-content>

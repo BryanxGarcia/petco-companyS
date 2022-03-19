@@ -8,6 +8,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'favorite',
+    loadChildren: () => import('./pages/favorite/favorite.module').then( m => m.FavoritePageModule)
+  },
+  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
@@ -31,10 +35,7 @@ const routes: Routes = [
     path: 'description',
     loadChildren: () => import('./pages/description/description.module').then( m => m.DescriptionPageModule)
   },
-  {
-    path: 'favorite',
-    loadChildren: () => import('./pages/favorite/favorite.module').then( m => m.FavoritePageModule)
-  },
+  
   {
     path: 'events',
     loadChildren: () => import('./pages/events/events.module').then( m => m.EventsPageModule)

@@ -1,3 +1,4 @@
+import { ComponenteModule } from 'src/app/components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { HomeUserPage } from './home-user.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomeUserPageRoutingModule
+    HomeUserPageRoutingModule,
+    ComponenteModule
   ],
   declarations: [HomeUserPage]
 })
